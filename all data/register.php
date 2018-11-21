@@ -19,12 +19,12 @@
   <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.js"></script>
-  <link rel="stylesheet" href="css/mynxt3.css">
+  <link rel="stylesheet" href="css/MyXEL3.css">
 </head>
 <body>
   <nav class="navbar navbar-default nxt_header" role="navigation">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-menu"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="//www.mynxt.info/index.php" target="_blank"><strong><span style="color:#f9f9f9"><em>my</em>NXT</span><span style="color:#F00">.</span><span style="color:#F90">info</span></strong></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-menu"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="//www.MyXEL.info/index.php" target="_blank"><strong><span style="color:#f9f9f9"><em>my</em>NXT</span><span style="color:#F00">.</span><span style="color:#F90">info</span></strong></a>
     </div>
     <div class="collapse navbar-collapse" id="top-menu">
       <ul class="nav navbar-nav">
@@ -35,27 +35,27 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Block Explorer <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li>
-              <a href="//www.mynxt.info/blockexplorer/" target="_blank">Overview</a>
+              <a href="//www.MyXEL.info/blockexplorer/" target="_blank">Overview</a>
             </li>
             <li class="divider"></li>
             <li>
-              <a href="//www.mynxt.info/blockexplorer/assets.php" target="_blank">Assets</a>
+              <a href="//www.MyXEL.info/blockexplorer/assets.php" target="_blank">Assets</a>
             </li>
             <li>
-              <a href="//www.mynxt.info/blockexplorer/goods.php" target="_blank">Goods</a>
+              <a href="//www.MyXEL.info/blockexplorer/goods.php" target="_blank">Goods</a>
             </li>
             <li class="divider"></li>
             <li>
-              <a href="//www.mynxt.info/blockexplorer/blocks.php" target="_blank">Blocks</a>
+              <a href="//www.MyXEL.info/blockexplorer/blocks.php" target="_blank">Blocks</a>
             </li>
             <li>
-              <a href="//www.mynxt.info/blockexplorer/transactions.php" target="_blank">Transactions</a>
+              <a href="//www.MyXEL.info/blockexplorer/transactions.php" target="_blank">Transactions</a>
             </li>
             <li>
-              <a href="//www.mynxt.info/blockexplorer/aliases.php" target="_blank">Aliases</a>
+              <a href="//www.MyXEL.info/blockexplorer/aliases.php" target="_blank">Aliases</a>
             </li>
             <li>
-              <a href="//www.mynxt.info/blockexplorer/accounts.php" target="_blank">Accounts</a>
+              <a href="//www.MyXEL.info/blockexplorer/accounts.php" target="_blank">Accounts</a>
             </li>
           </ul>
         </li>
@@ -63,10 +63,10 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li>
-              <a href="//www.mynxt.info/alerts.php" target="_blank">Alerter</a>
+              <a href="//www.MyXEL.info/alerts.php" target="_blank">Alerter</a>
             </li>
             <li>
-              <a href="//www.mynxt.info/forging_calculator.php" target="_blank">Forging Calculator</a>
+              <a href="//www.MyXEL.info/forging_calculator.php" target="_blank">Forging Calculator</a>
             </li>
             <li>
               <a href="//www.nxtad.net" target="_blank">NXT Ad Network</a>
@@ -77,24 +77,24 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Charts <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li>
-              <a href="//www.mynxt.info/charts/number_of_accounts.php" target="_blank">Nxt Accounts</a>
+              <a href="//www.MyXEL.info/charts/number_of_accounts.php" target="_blank">Nxt Accounts</a>
             </li>
             <li>
-              <a href="//www.mynxt.info/charts/transactions_per_day.php" target="_blank">Transactions</a>
+              <a href="//www.MyXEL.info/charts/transactions_per_day.php" target="_blank">Transactions</a>
             </li>
             <li>
-              <a href="//www.mynxt.info/charts/transaction_volume_per_day.php" target="_blank">Transaction volume</a>
+              <a href="//www.MyXEL.info/charts/transaction_volume_per_day.php" target="_blank">Transaction volume</a>
             </li>
             <li>
-              <a href="//www.mynxt.info/charts/fees_per_day.php" target="_blank">Fees</a>
+              <a href="//www.MyXEL.info/charts/fees_per_day.php" target="_blank">Fees</a>
             </li>
             <li>
-              <a href="//www.mynxt.info/charts/trades_asset_exchange_per_day.php" target="_blank">Asset Exchange</a>
+              <a href="//www.MyXEL.info/charts/trades_asset_exchange_per_day.php" target="_blank">Asset Exchange</a>
             </li>
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-right" id="navbar-search" name="search" role="search" action="//www.mynxt.info/blockexplorer/search.php" method="post">
+      <form class="navbar-form navbar-right" id="navbar-search" name="search" role="search" action="//www.MyXEL.info/blockexplorer/search.php" method="post">
         <div class="input-group">
           <span class="input-group-addon"><span class="glyphicon glyphicon-search" id="search-indicator" aria-hidden="false"></span></span> <input type="text" name="tx_search" id="input-search" class="form-control" placeholder="Quick search..." autocomplete="off" spellcheck="false">
         </div>
@@ -135,7 +135,7 @@
           </div>
           <ul>
             <li>You use two passwords for maximum security</li>
-            <li>The Login Password is used to accessing your MyNxt wallet</li>
+            <li>The Login Password is used to accessing your MyXEL wallet</li>
             <li>The master password is used for decrypting your wallet key in order to send NXT</li><br>
             <br>
             <div class="page-header nomargin">
@@ -202,7 +202,7 @@
     </div>
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.css">
     <link rel="stylesheet" href="css/ladda.min.css">
-    <script src="dist/MyNXT.js"></script>
+    <script src="dist/MyXEL.js"></script>
   </form>
 </body>
 </html>
