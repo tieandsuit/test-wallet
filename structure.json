@@ -1,0 +1,1694 @@
+{
+  "urls": {
+    "1": {
+      "url": "https://wallet.mynxt.info/",
+      "folder": "html",
+      "filename": "!.000001.html",
+      "filetime": "20170310225350",
+      "filesize": "25711",
+      "mimetype": "text/html",
+      "charset": "utf-8",
+      "url_original": "https://wallet.mynxt.info/"
+    }
+  }
+}
+{
+  "urls": {
+    "2": {
+      "url": "https://wallet.mynxt.info/api/0.1/plugins",
+      "folder": "html",
+      "filename": "!api!0.1!plugins.000002.json",
+      "filetime": "20150512074443",
+      "filesize": "52",
+      "mimetype": "application/json",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/api/0.1/plugins"
+    }
+  }
+}
+{
+  "urls": {
+    "3": {
+      "url": "https://wallet.mynxt.info/css/h35.ttf",
+      "folder": "html",
+      "filename": "!css!h35.ttf.000003.html",
+      "filetime": "20160714045241",
+      "filesize": "88452",
+      "mimetype": "text/plain",
+      "charset": "utf-8",
+      "url_original": "https://wallet.mynxt.info/css/h35.ttf"
+    }
+  }
+}
+{
+  "urls": {
+    "4": {
+      "url": "https://wallet.mynxt.info/css/h45.ttf",
+      "folder": "binary",
+      "filename": "!css!h45.ttf.000004.ttf",
+      "filetime": "20170507121709",
+      "filesize": "78320",
+      "mimetype": "application/font-sfnt",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/css/h45.ttf"
+    }
+  }
+}
+{
+  "urls": {
+    "5": {
+      "url": "https://wallet.mynxt.info/css/h55.ttf",
+      "folder": "html",
+      "filename": "!css!h55.ttf.000005.html",
+      "filetime": "20160713224402",
+      "filesize": "71456",
+      "mimetype": "text/plain",
+      "charset": "utf-8",
+      "url_original": "https://wallet.mynxt.info/css/h55.ttf"
+    }
+  }
+}
+{
+  "urls": {
+    "6": {
+      "url": "https://wallet.mynxt.info/css/helvetica.otf",
+      "folder": "binary",
+      "filename": "!css!helvetica.otf.000006.otf",
+      "filetime": "20170507164100",
+      "filesize": "16500",
+      "mimetype": "application/font-sfnt",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/css/helvetica.otf"
+    }
+  }
+}
+{
+  "urls": {
+    "7": {
+      "url": "https://wallet.mynxt.info/css/ladda.min.css",
+      "folder": "html",
+      "filename": "!css!ladda.min.css.000007.css",
+      "filetime": "20170314000646",
+      "filesize": "7540",
+      "mimetype": "text/css",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/css/ladda.min.css"
+    }
+  }
+}
+{
+  "urls": {
+    "8": {
+      "url": "https://wallet.mynxt.info/css/mynxt2.css",
+      "folder": "html",
+      "filename": "!css!mynxt2.css.000008.css",
+      "filetime": "20140309095806",
+      "filesize": "432",
+      "mimetype": "text/css",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/css/mynxt2.css"
+    }
+  }
+}
+{
+  "urls": {
+    "9": {
+      "url": "https://wallet.mynxt.info/css/mynxt3.css",
+      "folder": "html",
+      "filename": "!css!mynxt3.css.000009.css",
+      "filetime": "20170506050920",
+      "filesize": "6583",
+      "mimetype": "text/css",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/css/mynxt3.css"
+    }
+  }
+}
+{
+  "urls": {
+    "10": {
+      "url": "https://wallet.mynxt.info/css/style.css",
+      "folder": "html",
+      "filename": "!css!style.css.000010.css",
+      "filetime": "20170313233412",
+      "filesize": "5769",
+      "mimetype": "text/css",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/css/style.css"
+    }
+  }
+}
+{
+  "urls": {
+    "12": {
+      "url": "https://wallet.mynxt.info/docs",
+      "folder": "html",
+      "filename": "!docs.000012.html",
+      "filetime": "20161111150624",
+      "filesize": "5122",
+      "mimetype": "text/html",
+      "charset": "utf-8",
+      "url_original": "https://wallet.mynxt.info/docs"
+    }
+  }
+}
+{
+  "urls": {
+    "13": {
+      "url": "https://wallet.mynxt.info/docs/",
+      "folder": "html",
+      "filename": "!docs!.000013.html",
+      "filetime": "20170505162200",
+      "filesize": "5122",
+      "mimetype": "text/html",
+      "charset": "ascii",
+      "url_original": "https://wallet.mynxt.info/docs/"
+    }
+  }
+}
+{
+  "urls": {
+    "14": {
+      "url": "https://wallet.mynxt.info/docs/api/getting-started/",
+      "folder": "html",
+      "filename": "!docs!api!getting-started!.000014.html",
+      "filetime": "20150510171413",
+      "filesize": "6368",
+      "mimetype": "text/html",
+      "charset": "utf-8",
+      "url_original": "https://wallet.mynxt.info/docs/api/getting-started/"
+    }
+  }
+}
+{
+  "urls": {
+    "15": {
+      "url": "https://wallet.mynxt.info/docs/api/nxt/",
+      "folder": "html",
+      "filename": "!docs!api!nxt!.000015.html",
+      "filetime": "20150510113857",
+      "filesize": "7820",
+      "mimetype": "text/html",
+      "charset": "ascii",
+      "url_original": "https://wallet.mynxt.info/docs/api/nxt/"
+    }
+  }
+}
+{
+  "urls": {
+    "16": {
+      "url": "https://wallet.mynxt.info/docs/api/wallet/",
+      "folder": "html",
+      "filename": "!docs!api!wallet!.000016.html",
+      "filetime": "20150510111321",
+      "filesize": "17946",
+      "mimetype": "text/html",
+      "charset": "ascii",
+      "url_original": "https://wallet.mynxt.info/docs/api/wallet/"
+    }
+  }
+}
+{
+  "urls": {
+    "17": {
+      "url": "https://wallet.mynxt.info/docs/css/base.css",
+      "folder": "html",
+      "filename": "!docs!css!base.css.000017.css",
+      "filetime": "20160812040330",
+      "filesize": "1120",
+      "mimetype": "text/css",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/docs/css/base.css"
+    }
+  }
+}
+{
+  "urls": {
+    "21": {
+      "url": "https://wallet.mynxt.info/docs/fonts/fontawesome-webfont.eot",
+      "folder": "binary",
+      "filename": "!docs!fonts!fontawesome-webfont.eot.000021.eot",
+      "filetime": "20160822160252",
+      "filesize": "38205",
+      "mimetype": "application/vnd.ms-fontobject",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/docs/fonts/fontawesome-webfont.eot"
+    }
+  }
+}
+{
+  "urls": {
+    "20": {
+      "url": "https://wallet.mynxt.info/docs/css/prettify-1.0.css",
+      "folder": "html",
+      "filename": "!docs!css!prettify-1.0.css.000020.css",
+      "filetime": "20160812021618",
+      "filesize": "544",
+      "mimetype": "text/css",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/docs/css/prettify-1.0.css"
+    }
+  }
+}
+{
+  "urls": {
+    "22": {
+      "url": "https://wallet.mynxt.info/docs/fonts/fontawesome-webfont.eot?v=4.0.3",
+      "folder": "binary",
+      "filename": "!docs!fonts!fontawesome-webfont.eot;v=4.0.3.000022.eot",
+      "filetime": "20160822164133",
+      "filesize": "38205",
+      "mimetype": "application/vnd.ms-fontobject",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/docs/fonts/fontawesome-webfont.eot?v=4.0.3"
+    }
+  }
+}
+{
+  "urls": {
+    "19": {
+      "url": "https://wallet.mynxt.info/docs/css/font-awesome-4.0.3.css",
+      "folder": "html",
+      "filename": "!docs!css!font-awesome-4.0.3.css.000019.css",
+      "filetime": "20160812024426",
+      "filesize": "17780",
+      "mimetype": "text/css",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/docs/css/font-awesome-4.0.3.css"
+    }
+  }
+}
+{
+  "urls": {
+    "23": {
+      "url": "https://wallet.mynxt.info/docs/fonts/fontawesome-webfont.svg?v=4.0.3",
+      "folder": "html",
+      "filename": "!docs!fonts!fontawesome-webfont.svg;v=4.0.3.000023.svg",
+      "filetime": "20160822155221",
+      "filesize": "202148",
+      "mimetype": "image/svg+xml",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/docs/fonts/fontawesome-webfont.svg?v=4.0.3"
+    }
+  }
+}
+{
+  "urls": {
+    "18": {
+      "url": "https://wallet.mynxt.info/docs/css/bootstrap-3.0.3.min.css",
+      "folder": "html",
+      "filename": "!docs!css!bootstrap-3.0.3.min.css.000018.css",
+      "filetime": "20160812030637",
+      "filesize": "99546",
+      "mimetype": "text/css",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/docs/css/bootstrap-3.0.3.min.css"
+    }
+  }
+}
+{
+  "urls": {
+    "24": {
+      "url": "https://wallet.mynxt.info/docs/fonts/fontawesome-webfont.ttf?v=4.0.3",
+      "folder": "html",
+      "filename": "!docs!fonts!fontawesome-webfont.ttf;v=4.0.3.000024.html",
+      "filetime": "20160822153956",
+      "filesize": "80652",
+      "mimetype": "text/plain",
+      "charset": "utf-8",
+      "url_original": "https://wallet.mynxt.info/docs/fonts/fontawesome-webfont.ttf?v=4.0.3"
+    }
+  }
+}
+{
+  "urls": {
+    "25": {
+      "url": "https://wallet.mynxt.info/docs/fonts/fontawesome-webfont.woff?v=4.0.3",
+      "folder": "binary",
+      "filename": "!docs!fonts!fontawesome-webfont.woff;v=4.0.3.000025.woff",
+      "filetime": "20160822152319",
+      "filesize": "44432",
+      "mimetype": "application/x-font-woff",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/docs/fonts/fontawesome-webfont.woff?v=4.0.3"
+    }
+  }
+}
+{
+  "urls": {
+    "26": {
+      "url": "https://wallet.mynxt.info/docs/img/favicon.ico",
+      "folder": "binary",
+      "filename": "!docs!img!favicon.ico.000026.ico",
+      "filetime": "20160812051625",
+      "filesize": "1150",
+      "mimetype": "image/vnd.microsoft.icon",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/docs/img/favicon.ico"
+    }
+  }
+}
+{
+  "urls": {
+    "27": {
+      "url": "https://wallet.mynxt.info/docs/js/base.js",
+      "folder": "html",
+      "filename": "!docs!js!base.js.000027.js",
+      "filetime": "20160812030756",
+      "filesize": "774",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/docs/js/base.js"
+    }
+  }
+}
+{
+  "urls": {
+    "30": {
+      "url": "https://wallet.mynxt.info/docs/plugins/angular/",
+      "folder": "html",
+      "filename": "!docs!plugins!angular!.000030.html",
+      "filetime": "20150510115306",
+      "filesize": "3365",
+      "mimetype": "text/html",
+      "charset": "ascii",
+      "url_original": "https://wallet.mynxt.info/docs/plugins/angular/"
+    }
+  }
+}
+{
+  "urls": {
+    "28": {
+      "url": "https://wallet.mynxt.info/docs/js/bootstrap-3.0.3.min.js",
+      "folder": "html",
+      "filename": "!docs!js!bootstrap-3.0.3.min.js.000028.js",
+      "filetime": "20160812050914",
+      "filesize": "27674",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/docs/js/bootstrap-3.0.3.min.js"
+    }
+  }
+}
+{
+  "urls": {
+    "29": {
+      "url": "https://wallet.mynxt.info/docs/js/prettify-1.0.min.js",
+      "folder": "html",
+      "filename": "!docs!js!prettify-1.0.min.js.000029.js",
+      "filetime": "20160812044843",
+      "filesize": "13600",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/docs/js/prettify-1.0.min.js"
+    }
+  }
+}
+{
+  "urls": {
+    "31": {
+      "url": "https://wallet.mynxt.info/docs/plugins/getting-started/",
+      "folder": "html",
+      "filename": "!docs!plugins!getting-started!.000031.html",
+      "filetime": "20150510112833",
+      "filesize": "3889",
+      "mimetype": "text/html",
+      "charset": "ascii",
+      "url_original": "https://wallet.mynxt.info/docs/plugins/getting-started/"
+    }
+  }
+}
+{
+  "urls": {
+    "32": {
+      "url": "https://wallet.mynxt.info/docs/plugins/jquery/",
+      "folder": "html",
+      "filename": "!docs!plugins!jquery!.000032.html",
+      "filetime": "20150510115900",
+      "filesize": "10032",
+      "mimetype": "text/html",
+      "charset": "ascii",
+      "url_original": "https://wallet.mynxt.info/docs/plugins/jquery/"
+    }
+  }
+}
+{
+  "urls": {
+    "33": {
+      "url": "https://wallet.mynxt.info/docs/plugins/publishing/",
+      "folder": "html",
+      "filename": "!docs!plugins!publishing!.000033.html",
+      "filetime": "20150510112612",
+      "filesize": "7443",
+      "mimetype": "text/html",
+      "charset": "ascii",
+      "url_original": "https://wallet.mynxt.info/docs/plugins/publishing/"
+    }
+  }
+}
+{
+  "urls": {
+    "34": {
+      "url": "https://wallet.mynxt.info/faq.php",
+      "folder": "html",
+      "filename": "!faq.php.000034.html",
+      "filetime": "20161111152222",
+      "filesize": "9809",
+      "mimetype": "text/html",
+      "charset": "ascii",
+      "url_original": "https://wallet.mynxt.info/faq.php"
+    }
+  }
+}
+{
+  "urls": {
+    "35": {
+      "url": "https://wallet.mynxt.info/favicon.ico",
+      "folder": "binary",
+      "filename": "!favicon.ico.000035.ico",
+      "filetime": "20170313214932",
+      "filesize": "1150",
+      "mimetype": "image/vnd.microsoft.icon",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/favicon.ico"
+    }
+  }
+}
+{
+  "urls": {
+    "36": {
+      "url": "https://wallet.mynxt.info/get_balance.php",
+      "folder": "html",
+      "filename": "!get_balance.php.000036.html",
+      "filetime": "20150512074507",
+      "filesize": "87",
+      "mimetype": "text/html",
+      "charset": "ascii",
+      "url_original": "https://wallet.mynxt.info/get_balance.php"
+    }
+  }
+}
+{
+  "urls": {
+    "11": {
+      "url": "https://wallet.mynxt.info/dist/MyNXT.js",
+      "folder": "html",
+      "filename": "!dist!MyNXT.js.000011.js",
+      "filetime": "20170313215703",
+      "filesize": "973101",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/dist/MyNXT.js"
+    }
+  }
+}
+{
+  "urls": {
+    "37": {
+      "url": "https://wallet.mynxt.info/how_it_works.php",
+      "folder": "html",
+      "filename": "!how_it_works.php.000037.html",
+      "filetime": "20150510232854",
+      "filesize": "8256",
+      "mimetype": "text/html",
+      "charset": "ascii",
+      "url_original": "https://wallet.mynxt.info/how_it_works.php"
+    }
+  }
+}
+{
+  "urls": {
+    "38": {
+      "url": "https://wallet.mynxt.info/images/appstore.png",
+      "folder": "binary",
+      "filename": "!images!appstore.png.000038.png",
+      "filetime": "20170314031124",
+      "filesize": "7967",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/appstore.png"
+    }
+  }
+}
+{
+  "urls": {
+    "39": {
+      "url": "https://wallet.mynxt.info/images/barcode.jpg",
+      "folder": "binary",
+      "filename": "!images!barcode.jpg.000039.jpg",
+      "filetime": "20170313235544",
+      "filesize": "9297",
+      "mimetype": "image/jpeg",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/barcode.jpg"
+    }
+  }
+}
+{
+  "urls": {
+    "40": {
+      "url": "https://wallet.mynxt.info/images/comodo_secure_76x26_transp.png",
+      "folder": "binary",
+      "filename": "!images!comodo_secure_76x26_transp.png.000040.png",
+      "filetime": "20160303031700",
+      "filesize": "3225",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/comodo_secure_76x26_transp.png"
+    }
+  }
+}
+{
+  "urls": {
+    "41": {
+      "url": "https://wallet.mynxt.info/images/download.jpg",
+      "folder": "binary",
+      "filename": "!images!download.jpg.000041.jpg",
+      "filetime": "20160713154510",
+      "filesize": "15163",
+      "mimetype": "image/jpeg",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/download.jpg"
+    }
+  }
+}
+{
+  "urls": {
+    "42": {
+      "url": "https://wallet.mynxt.info/images/fb.png",
+      "folder": "binary",
+      "filename": "!images!fb.png.000042.png",
+      "filetime": "20170314023422",
+      "filesize": "581",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/fb.png"
+    }
+  }
+}
+{
+  "urls": {
+    "43": {
+      "url": "https://wallet.mynxt.info/images/flogo.png",
+      "folder": "binary",
+      "filename": "!images!flogo.png.000043.png",
+      "filetime": "20170314042836",
+      "filesize": "6909",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/flogo.png"
+    }
+  }
+}
+{
+  "urls": {
+    "44": {
+      "url": "https://wallet.mynxt.info/images/g+.png",
+      "folder": "binary",
+      "filename": "!images!g+.png.000044.png",
+      "filetime": "20170314003514",
+      "filesize": "777",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/g+.png"
+    }
+  }
+}
+{
+  "urls": {
+    "45": {
+      "url": "https://wallet.mynxt.info/images/h1.png",
+      "folder": "binary",
+      "filename": "!images!h1.png.000045.png",
+      "filetime": "20170314000045",
+      "filesize": "8080",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/h1.png"
+    }
+  }
+}
+{
+  "urls": {
+    "46": {
+      "url": "https://wallet.mynxt.info/images/h2.png",
+      "folder": "binary",
+      "filename": "!images!h2.png.000046.png",
+      "filetime": "20170314012650",
+      "filesize": "8048",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/h2.png"
+    }
+  }
+}
+{
+  "urls": {
+    "47": {
+      "url": "https://wallet.mynxt.info/images/h3.png",
+      "folder": "binary",
+      "filename": "!images!h3.png.000047.png",
+      "filetime": "20170314030525",
+      "filesize": "7721",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/h3.png"
+    }
+  }
+}
+{
+  "urls": {
+    "48": {
+      "url": "https://wallet.mynxt.info/images/h4.png",
+      "folder": "binary",
+      "filename": "!images!h4.png.000048.png",
+      "filetime": "20170314031820",
+      "filesize": "8270",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/h4.png"
+    }
+  }
+}
+{
+  "urls": {
+    "49": {
+      "url": "https://wallet.mynxt.info/images/h5.png",
+      "folder": "binary",
+      "filename": "!images!h5.png.000049.png",
+      "filetime": "20170314014620",
+      "filesize": "6939",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/h5.png"
+    }
+  }
+}
+{
+  "urls": {
+    "50": {
+      "url": "https://wallet.mynxt.info/images/h6.png",
+      "folder": "binary",
+      "filename": "!images!h6.png.000050.png",
+      "filetime": "20170313234534",
+      "filesize": "8332",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/h6.png"
+    }
+  }
+}
+{
+  "urls": {
+    "51": {
+      "url": "https://wallet.mynxt.info/images/hand.png",
+      "folder": "binary",
+      "filename": "!images!hand.png.000051.png",
+      "filetime": "20170314042311",
+      "filesize": "303236",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/hand.png"
+    }
+  }
+}
+{
+  "urls": {
+    "53": {
+      "url": "https://wallet.mynxt.info/images/i1.png",
+      "folder": "binary",
+      "filename": "!images!i1.png.000053.png",
+      "filetime": "20170313213114",
+      "filesize": "5274",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/i1.png"
+    }
+  }
+}
+{
+  "urls": {
+    "54": {
+      "url": "https://wallet.mynxt.info/images/i2.png",
+      "folder": "binary",
+      "filename": "!images!i2.png.000054.png",
+      "filetime": "20170314041257",
+      "filesize": "5516",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/i2.png"
+    }
+  }
+}
+{
+  "urls": {
+    "52": {
+      "url": "https://wallet.mynxt.info/images/headerback.jpg",
+      "folder": "binary",
+      "filename": "!images!headerback.jpg.000052.jpg",
+      "filetime": "20160713225125",
+      "filesize": "142952",
+      "mimetype": "image/jpeg",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/headerback.jpg"
+    }
+  }
+}
+{
+  "urls": {
+    "55": {
+      "url": "https://wallet.mynxt.info/images/i3.png",
+      "folder": "binary",
+      "filename": "!images!i3.png.000055.png",
+      "filetime": "20170314024457",
+      "filesize": "7032",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/i3.png"
+    }
+  }
+}
+{
+  "urls": {
+    "57": {
+      "url": "https://wallet.mynxt.info/images/linkedin.png",
+      "folder": "binary",
+      "filename": "!images!linkedin.png.000057.png",
+      "filetime": "20170313233626",
+      "filesize": "706",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/linkedin.png"
+    }
+  }
+}
+{
+  "urls": {
+    "56": {
+      "url": "https://wallet.mynxt.info/images/imac.png",
+      "folder": "binary",
+      "filename": "!images!imac.png.000056.png",
+      "filetime": "20170314022318",
+      "filesize": "330667",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/imac.png"
+    }
+  }
+}
+{
+  "urls": {
+    "58": {
+      "url": "https://wallet.mynxt.info/images/logo.png",
+      "folder": "binary",
+      "filename": "!images!logo.png.000058.png",
+      "filetime": "20170313222932",
+      "filesize": "2693",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/logo.png"
+    }
+  }
+}
+{
+  "urls": {
+    "59": {
+      "url": "https://wallet.mynxt.info/images/mail.png",
+      "folder": "binary",
+      "filename": "!images!mail.png.000059.png",
+      "filetime": "20170313221339",
+      "filesize": "360",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/mail.png"
+    }
+  }
+}
+{
+  "urls": {
+    "60": {
+      "url": "https://wallet.mynxt.info/images/map.png",
+      "folder": "binary",
+      "filename": "!images!map.png.000060.png",
+      "filetime": "20161111210822",
+      "filesize": "711",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/map.png"
+    }
+  }
+}
+{
+  "urls": {
+    "61": {
+      "url": "https://wallet.mynxt.info/images/mouse.png",
+      "folder": "binary",
+      "filename": "!images!mouse.png.000061.png",
+      "filetime": "20170313211508",
+      "filesize": "673",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/mouse.png"
+    }
+  }
+}
+{
+  "urls": {
+    "62": {
+      "url": "https://wallet.mynxt.info/images/playstore.png",
+      "folder": "binary",
+      "filename": "!images!playstore.png.000062.png",
+      "filetime": "20170313221502",
+      "filesize": "13289",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/playstore.png"
+    }
+  }
+}
+{
+  "urls": {
+    "63": {
+      "url": "https://wallet.mynxt.info/images/s1.png",
+      "folder": "binary",
+      "filename": "!images!s1.png.000063.png",
+      "filetime": "20170314005542",
+      "filesize": "8050",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/s1.png"
+    }
+  }
+}
+{
+  "urls": {
+    "64": {
+      "url": "https://wallet.mynxt.info/images/s3.png",
+      "folder": "binary",
+      "filename": "!images!s3.png.000064.png",
+      "filetime": "20170313220556",
+      "filesize": "9963",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/s3.png"
+    }
+  }
+}
+{
+  "urls": {
+    "65": {
+      "url": "https://wallet.mynxt.info/images/s4.png",
+      "folder": "binary",
+      "filename": "!images!s4.png.000065.png",
+      "filetime": "20170313215052",
+      "filesize": "43812",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/s4.png"
+    }
+  }
+}
+{
+  "urls": {
+    "66": {
+      "url": "https://wallet.mynxt.info/images/s5.png",
+      "folder": "binary",
+      "filename": "!images!s5.png.000066.png",
+      "filetime": "20170314001601",
+      "filesize": "11790",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/s5.png"
+    }
+  }
+}
+{
+  "urls": {
+    "67": {
+      "url": "https://wallet.mynxt.info/images/scroll.png",
+      "folder": "binary",
+      "filename": "!images!scroll.png.000067.png",
+      "filetime": "20170314022614",
+      "filesize": "695",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/scroll.png"
+    }
+  }
+}
+{
+  "urls": {
+    "68": {
+      "url": "https://wallet.mynxt.info/images/twitter.png",
+      "folder": "binary",
+      "filename": "!images!twitter.png.000068.png",
+      "filetime": "20170313213233",
+      "filesize": "721",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/images/twitter.png"
+    }
+  }
+}
+{
+  "urls": {
+    "69": {
+      "url": "https://wallet.mynxt.info/img/accordion-minus.png",
+      "folder": "binary",
+      "filename": "!img!accordion-minus.png.000069.png",
+      "filetime": "20160814072458",
+      "filesize": "162",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/accordion-minus.png"
+    }
+  }
+}
+{
+  "urls": {
+    "70": {
+      "url": "https://wallet.mynxt.info/img/accordion-plus.png",
+      "folder": "binary",
+      "filename": "!img!accordion-plus.png.000070.png",
+      "filetime": "20160814072007",
+      "filesize": "188",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/accordion-plus.png"
+    }
+  }
+}
+{
+  "urls": {
+    "71": {
+      "url": "https://wallet.mynxt.info/img/ajax-loader.gif",
+      "folder": "binary",
+      "filename": "!img!ajax-loader.gif.000071.gif",
+      "filetime": "20170313232325",
+      "filesize": "8459",
+      "mimetype": "image/gif",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/ajax-loader.gif"
+    }
+  }
+}
+{
+  "urls": {
+    "72": {
+      "url": "https://wallet.mynxt.info/img/benefits-arrow.png",
+      "folder": "binary",
+      "filename": "!img!benefits-arrow.png.000072.png",
+      "filetime": "20160814062454",
+      "filesize": "771",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/benefits-arrow.png"
+    }
+  }
+}
+{
+  "urls": {
+    "74": {
+      "url": "https://wallet.mynxt.info/img/call-to-action-pattern.png",
+      "folder": "binary",
+      "filename": "!img!call-to-action-pattern.png.000074.png",
+      "filetime": "20160814083229",
+      "filesize": "165",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/call-to-action-pattern.png"
+    }
+  }
+}
+{
+  "urls": {
+    "73": {
+      "url": "https://wallet.mynxt.info/img/bg1b.jpg",
+      "folder": "binary",
+      "filename": "!img!bg1b.jpg.000073.jpg",
+      "filetime": "20160814105435",
+      "filesize": "73140",
+      "mimetype": "image/jpeg",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/bg1b.jpg"
+    }
+  }
+}
+{
+  "urls": {
+    "75": {
+      "url": "https://wallet.mynxt.info/img/compatibility-image-arrow.png",
+      "folder": "binary",
+      "filename": "!img!compatibility-image-arrow.png.000075.png",
+      "filetime": "20160814111133",
+      "filesize": "1392",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/compatibility-image-arrow.png"
+    }
+  }
+}
+{
+  "urls": {
+    "76": {
+      "url": "https://wallet.mynxt.info/img/compatibility-image.png",
+      "folder": "binary",
+      "filename": "!img!compatibility-image.png.000076.png",
+      "filetime": "20150329150621",
+      "filesize": "181242",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/compatibility-image.png"
+    }
+  }
+}
+{
+  "urls": {
+    "77": {
+      "url": "https://wallet.mynxt.info/img/dashboard.svg",
+      "folder": "html",
+      "filename": "!img!dashboard.svg.000077.svg",
+      "filetime": "20160814082534",
+      "filesize": "1164",
+      "mimetype": "image/svg+xml",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/dashboard.svg"
+    }
+  }
+}
+{
+  "urls": {
+    "78": {
+      "url": "https://wallet.mynxt.info/img/foto-pattern-dark.png",
+      "folder": "binary",
+      "filename": "!img!foto-pattern-dark.png.000078.png",
+      "filetime": "20160814115410",
+      "filesize": "182",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/foto-pattern-dark.png"
+    }
+  }
+}
+{
+  "urls": {
+    "79": {
+      "url": "https://wallet.mynxt.info/img/grey-lines.png",
+      "folder": "binary",
+      "filename": "!img!grey-lines.png.000079.png",
+      "filetime": "20160814082037",
+      "filesize": "180",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/grey-lines.png"
+    }
+  }
+}
+{
+  "urls": {
+    "80": {
+      "url": "https://wallet.mynxt.info/img/grey-round.png",
+      "folder": "binary",
+      "filename": "!img!grey-round.png.000080.png",
+      "filetime": "20160814063934",
+      "filesize": "324",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/grey-round.png"
+    }
+  }
+}
+{
+  "urls": {
+    "82": {
+      "url": "https://wallet.mynxt.info/img/loading_small.gif",
+      "folder": "binary",
+      "filename": "!img!loading_small.gif.000082.gif",
+      "filetime": "20150513200453",
+      "filesize": "2747",
+      "mimetype": "image/gif",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/loading_small.gif"
+    }
+  }
+}
+{
+  "urls": {
+    "83": {
+      "url": "https://wallet.mynxt.info/index.php",
+      "folder": "html",
+      "filename": "!index.php.000083.html",
+      "filetime": "20160329014837",
+      "filesize": "26150",
+      "mimetype": "text/html",
+      "charset": "utf-8",
+      "url_original": "https://wallet.mynxt.info/index.php"
+    }
+  }
+}
+{
+  "urls": {
+    "81": {
+      "url": "https://wallet.mynxt.info/img/header.png",
+      "folder": "binary",
+      "filename": "!img!header.png.000081.png",
+      "filetime": "20160814070542",
+      "filesize": "44998",
+      "mimetype": "image/png",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/img/header.png"
+    }
+  }
+}
+{
+  "urls": {
+    "84": {
+      "url": "https://wallet.mynxt.info/js/dependencies/3rdparty/base64.js",
+      "folder": "html",
+      "filename": "!js!dependencies!3rdparty!base64.js.000084.js",
+      "filetime": "20141017062908",
+      "filesize": "1348",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/3rdparty/base64.js"
+    }
+  }
+}
+{
+  "urls": {
+    "85": {
+      "url": "https://wallet.mynxt.info/js/dependencies/3rdparty/bignumber.min.js",
+      "folder": "html",
+      "filename": "!js!dependencies!3rdparty!bignumber.min.js.000085.js",
+      "filetime": "20141017062910",
+      "filesize": "11536",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/3rdparty/bignumber.min.js"
+    }
+  }
+}
+{
+  "urls": {
+    "86": {
+      "url": "https://wallet.mynxt.info/js/dependencies/3rdparty/bootstrap-editable.min.js",
+      "folder": "html",
+      "filename": "!js!dependencies!3rdparty!bootstrap-editable.min.js.000086.js",
+      "filetime": "20141017062912",
+      "filesize": "75720",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/3rdparty/bootstrap-editable.min.js"
+    }
+  }
+}
+{
+  "urls": {
+    "88": {
+      "url": "https://wallet.mynxt.info/js/dependencies/3rdparty/jsbn2.js",
+      "folder": "html",
+      "filename": "!js!dependencies!3rdparty!jsbn2.js.000088.js",
+      "filetime": "20141017062905",
+      "filesize": "12707",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/3rdparty/jsbn2.js"
+    }
+  }
+}
+{
+  "urls": {
+    "89": {
+      "url": "https://wallet.mynxt.info/js/dependencies/3rdparty/jsbn.js",
+      "folder": "html",
+      "filename": "!js!dependencies!3rdparty!jsbn.js.000089.js",
+      "filetime": "20141017062905",
+      "filesize": "9344",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/3rdparty/jsbn.js"
+    }
+  }
+}
+{
+  "urls": {
+    "90": {
+      "url": "https://wallet.mynxt.info/js/dependencies/3rdparty/ladda.min.js",
+      "folder": "html",
+      "filename": "!js!dependencies!3rdparty!ladda.min.js.000090.js",
+      "filetime": "20141017062915",
+      "filesize": "2370",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/3rdparty/ladda.min.js"
+    }
+  }
+}
+{
+  "urls": {
+    "87": {
+      "url": "https://wallet.mynxt.info/js/dependencies/3rdparty/jquery-1.11.1.min.js",
+      "folder": "html",
+      "filename": "!js!dependencies!3rdparty!jquery-1.11.1.min.js.000087.js",
+      "filetime": "20170505010220",
+      "filesize": "95691",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/3rdparty/jquery-1.11.1.min.js"
+    }
+  }
+}
+{
+  "urls": {
+    "92": {
+      "url": "https://wallet.mynxt.info/js/dependencies/3rdparty/spin.min.js",
+      "folder": "html",
+      "filename": "!js!dependencies!3rdparty!spin.min.js.000092.js",
+      "filetime": "20141017062901",
+      "filesize": "4360",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/3rdparty/spin.min.js"
+    }
+  }
+}
+{
+  "urls": {
+    "91": {
+      "url": "https://wallet.mynxt.info/js/dependencies/3rdparty/pako.js",
+      "folder": "html",
+      "filename": "!js!dependencies!3rdparty!pako.js.000091.js",
+      "filetime": "20141017062917",
+      "filesize": "69617",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/3rdparty/pako.js"
+    }
+  }
+}
+{
+  "urls": {
+    "94": {
+      "url": "https://wallet.mynxt.info/js/dependencies/crypto/CryptoJS/aes.js",
+      "folder": "html",
+      "filename": "!js!dependencies!crypto!CryptoJS!aes.js.000094.js",
+      "filetime": "20141017062914",
+      "filesize": "13187",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/crypto/CryptoJS/aes.js"
+    }
+  }
+}
+{
+  "urls": {
+    "95": {
+      "url": "https://wallet.mynxt.info/js/dependencies/crypto/CryptoJS/core-min.js",
+      "folder": "html",
+      "filename": "!js!dependencies!crypto!CryptoJS!core-min.js.000095.js",
+      "filetime": "20141017062900",
+      "filesize": "3148",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/crypto/CryptoJS/core-min.js"
+    }
+  }
+}
+{
+  "urls": {
+    "96": {
+      "url": "https://wallet.mynxt.info/js/dependencies/crypto/CryptoJS/sha256.js",
+      "folder": "html",
+      "filename": "!js!dependencies!crypto!CryptoJS!sha256.js.000096.js",
+      "filetime": "20141017062919",
+      "filesize": "4454",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/crypto/CryptoJS/sha256.js"
+    }
+  }
+}
+{
+  "urls": {
+    "97": {
+      "url": "https://wallet.mynxt.info/js/dependencies/crypto/curve25519_.js",
+      "folder": "html",
+      "filename": "!js!dependencies!crypto!curve25519_.js.000097.js",
+      "filetime": "20141017062917",
+      "filesize": "19233",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/crypto/curve25519_.js"
+    }
+  }
+}
+{
+  "urls": {
+    "98": {
+      "url": "https://wallet.mynxt.info/js/dependencies/crypto/curve25519.js",
+      "folder": "html",
+      "filename": "!js!dependencies!crypto!curve25519.js.000098.js",
+      "filetime": "20141017062919",
+      "filesize": "12740",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/crypto/curve25519.js"
+    }
+  }
+}
+{
+  "urls": {
+    "99": {
+      "url": "https://wallet.mynxt.info/js/dependencies/crypto/jssha256.js",
+      "folder": "html",
+      "filename": "!js!dependencies!crypto!jssha256.js.000099.js",
+      "filetime": "20141017062859",
+      "filesize": "4305",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/crypto/jssha256.js"
+    }
+  }
+}
+{
+  "urls": {
+    "93": {
+      "url": "https://wallet.mynxt.info/js/dependencies/crypto/asmcrypto.js",
+      "folder": "html",
+      "filename": "!js!dependencies!crypto!asmcrypto.js.000093.js",
+      "filetime": "20141017062901",
+      "filesize": "238674",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/crypto/asmcrypto.js"
+    }
+  }
+}
+{
+  "urls": {
+    "100": {
+      "url": "https://wallet.mynxt.info/js/dependencies/crypto/mcrypt.js",
+      "folder": "html",
+      "filename": "!js!dependencies!crypto!mcrypt.js.000100.js",
+      "filetime": "20141017062906",
+      "filesize": "4792",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/crypto/mcrypt.js"
+    }
+  }
+}
+{
+  "urls": {
+    "101": {
+      "url": "https://wallet.mynxt.info/js/dependencies/crypto/rijndael.js",
+      "folder": "html",
+      "filename": "!js!dependencies!crypto!rijndael.js.000101.js",
+      "filetime": "20141017062920",
+      "filesize": "4067",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/crypto/rijndael.js"
+    }
+  }
+}
+{
+  "urls": {
+    "103": {
+      "url": "https://wallet.mynxt.info/js/dependencies/nxt/converters.js",
+      "folder": "html",
+      "filename": "!js!dependencies!nxt!converters.js.000103.js",
+      "filetime": "20141017062902",
+      "filesize": "4940",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/nxt/converters.js"
+    }
+  }
+}
+{
+  "urls": {
+    "102": {
+      "url": "https://wallet.mynxt.info/js/dependencies/crypto/sjcl.js",
+      "folder": "html",
+      "filename": "!js!dependencies!crypto!sjcl.js.000102.js",
+      "filetime": "20141017062914",
+      "filesize": "22406",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/crypto/sjcl.js"
+    }
+  }
+}
+{
+  "urls": {
+    "104": {
+      "url": "https://wallet.mynxt.info/js/dependencies/nxt/nrs_crypto.js",
+      "folder": "html",
+      "filename": "!js!dependencies!nxt!nrs_crypto.js.000104.js",
+      "filetime": "20141017062904",
+      "filesize": "2711",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/nxt/nrs_crypto.js"
+    }
+  }
+}
+{
+  "urls": {
+    "105": {
+      "url": "https://wallet.mynxt.info/js/dependencies/nxt/nxt_address_ex.js",
+      "folder": "html",
+      "filename": "!js!dependencies!nxt!nxt_address_ex.js.000105.js",
+      "filetime": "20141017062908",
+      "filesize": "4898",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/dependencies/nxt/nxt_address_ex.js"
+    }
+  }
+}
+{
+  "urls": {
+    "106": {
+      "url": "https://wallet.mynxt.info/js/login.js",
+      "folder": "html",
+      "filename": "!js!login.js.000106.js",
+      "filetime": "20140719171030",
+      "filesize": "1609",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/login.js"
+    }
+  }
+}
+{
+  "urls": {
+    "107": {
+      "url": "https://wallet.mynxt.info/js/MyNXT.account.js",
+      "folder": "html",
+      "filename": "!js!MyNXT.account.js.000107.js",
+      "filetime": "20141017062906",
+      "filesize": "4470",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/MyNXT.account.js"
+    }
+  }
+}
+{
+  "urls": {
+    "108": {
+      "url": "https://wallet.mynxt.info/js/MyNXT.crypto.js",
+      "folder": "html",
+      "filename": "!js!MyNXT.crypto.js.000108.js",
+      "filetime": "20141017062901",
+      "filesize": "5323",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/MyNXT.crypto.js"
+    }
+  }
+}
+{
+  "urls": {
+    "109": {
+      "url": "https://wallet.mynxt.info/js/MyNXT.js",
+      "folder": "html",
+      "filename": "!js!MyNXT.js.000109.js",
+      "filetime": "20141017062915",
+      "filesize": "6390",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/MyNXT.js"
+    }
+  }
+}
+{
+  "urls": {
+    "110": {
+      "url": "https://wallet.mynxt.info/js/MyNXT.login.js",
+      "folder": "html",
+      "filename": "!js!MyNXT.login.js.000110.js",
+      "filetime": "20141017062904",
+      "filesize": "1927",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/MyNXT.login.js"
+    }
+  }
+}
+{
+  "urls": {
+    "111": {
+      "url": "https://wallet.mynxt.info/js/MyNXT.modal.js",
+      "folder": "html",
+      "filename": "!js!MyNXT.modal.js.000111.js",
+      "filetime": "20141017062903",
+      "filesize": "261",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/MyNXT.modal.js"
+    }
+  }
+}
+{
+  "urls": {
+    "112": {
+      "url": "https://wallet.mynxt.info/js/MyNXT.publicKeys.js",
+      "folder": "html",
+      "filename": "!js!MyNXT.publicKeys.js.000112.js",
+      "filetime": "20141017062908",
+      "filesize": "1673",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/MyNXT.publicKeys.js"
+    }
+  }
+}
+{
+  "urls": {
+    "113": {
+      "url": "https://wallet.mynxt.info/js/MyNXT.transactionHistory.js",
+      "folder": "html",
+      "filename": "!js!MyNXT.transactionHistory.js.000113.js",
+      "filetime": "20141017062906",
+      "filesize": "4172",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/MyNXT.transactionHistory.js"
+    }
+  }
+}
+{
+  "urls": {
+    "114": {
+      "url": "https://wallet.mynxt.info/js/MyNXT.transaction.js",
+      "folder": "html",
+      "filename": "!js!MyNXT.transaction.js.000114.js",
+      "filetime": "20141017062919",
+      "filesize": "7654",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/MyNXT.transaction.js"
+    }
+  }
+}
+{
+  "urls": {
+    "115": {
+      "url": "https://wallet.mynxt.info/js/MyNXT.transactionTypes.js",
+      "folder": "html",
+      "filename": "!js!MyNXT.transactionTypes.js.000115.js",
+      "filetime": "20141017062911",
+      "filesize": "3489",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/MyNXT.transactionTypes.js"
+    }
+  }
+}
+{
+  "urls": {
+    "117": {
+      "url": "https://wallet.mynxt.info/language_en.txt",
+      "folder": "html",
+      "filename": "!language_en.txt.000117.txt",
+      "filetime": "20150512074443",
+      "filesize": "756",
+      "mimetype": "text/plain",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/language_en.txt"
+    }
+  }
+}
+{
+  "urls": {
+    "116": {
+      "url": "https://wallet.mynxt.info/js/MyNXT.util.js",
+      "folder": "html",
+      "filename": "!js!MyNXT.util.js.000116.js",
+      "filetime": "20141017062909",
+      "filesize": "10169",
+      "mimetype": "application/javascript",
+      "charset": "",
+      "url_original": "https://wallet.mynxt.info/js/MyNXT.util.js"
+    }
+  }
+}
+{
+  "urls": {
+    "118": {
+      "url": "https://wallet.mynxt.info/register.php",
+      "folder": "html",
+      "filename": "!register.php.000118.html",
+      "filetime": "20150510214205",
+      "filesize": "12357",
+      "mimetype": "text/html",
+      "charset": "ascii",
+      "url_original": "https://wallet.mynxt.info/register.php"
+    }
+  }
+}
+{
+  "urls": {
+    "119": {
+      "url": "https://wallet.mynxt.info/robots.txt",
+      "folder": "html",
+      "filename": "!robots.txt.000119.html",
+      "filetime": "20170507164053",
+      "filesize": "217",
+      "mimetype": "text/html",
+      "charset": "iso-8859-1",
+      "url_original": "https://wallet.mynxt.info/robots.txt"
+    }
+  }
+}
+{
+  "urls": {
+    "120": {
+      "url": "https://wallet.mynxt.info/security.php",
+      "folder": "html",
+      "filename": "!security.php.000120.html",
+      "filetime": "20150510213841",
+      "filesize": "9004",
+      "mimetype": "text/html",
+      "charset": "ascii",
+      "url_original": "https://wallet.mynxt.info/security.php"
+    }
+  }
+}
+{
+  "urls": {
+    "121": {
+      "url": "https://wallet.mynxt.info/",
+      "folder": "html",
+      "filename": "!.000121.html",
+      "filetime": "20150316113010",
+      "filesize": "21977",
+      "mimetype": "text/html",
+      "charset": "utf-8",
+      "url_original": "http://wallet.mynxt.info/"
+    }
+  }
+}
