@@ -23,16 +23,16 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plugins <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
-                <a href="../../plugins/getting-started">Getting started</a>
+                <a href="../../plugins/getting-started/getting-started.html">Getting started</a>
               </li>
               <li>
-                <a href="../../plugins/jquery">jQuery library</a>
+                <a href="../../plugins/jquery/jquery.html">jQuery library</a>
               </li>
               <li>
-                <a href="../../plugins/angular">Angular service</a>
+                <a href="../../plugins/angular/angular.html">Angular service</a>
               </li>
               <li>
-                <a href="../../plugins/publishing">Publishing plugins</a>
+                <a href="../../plugins/publishing/publishing.html">Publishing plugins</a>
               </li>
             </ul>
           </li>
@@ -40,20 +40,20 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">API <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
-                <a href="../getting-started">Getting started</a>
+                <a href="../getting-started/getting-started.html">Getting started</a>
               </li>
               <li>
-                <a href="../wallet">Wallet</a>
+                <a href="../wallet/wallet.html">Wallet</a>
               </li>
               <li class="active">
-                <a href=".">NXT</a>
+                <a href="nxt.html">NXT</a>
               </li>
             </ul>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a rel="next" href="../wallet"><i class="fa fa-arrow-left"></i> Previous</a>
+            <a rel="next" href="../wallet/wallet.html"><i class="fa fa-arrow-left"></i> Previous</a>
           </li>
           <li class="disabled">
             <a rel="prev">Next <i class="fa fa-arrow-right"></i></a>
@@ -67,7 +67,7 @@
       <div class="bs-sidebar hidden-print affix well" role="complementary">
         <ul class="nav bs-sidenav">
           <li class="main active">
-            <a href="#nxt-api">NXT API</a>
+            <a href="#nxt-api">XEL API</a>
           </li>
           <li>
             <a href="#usage">Usage</a>
@@ -76,11 +76,11 @@
       </div>
     </div>
     <div class="col-md-9" role="main">
-      <h1 id="nxt-api">NXT API</h1>
-      <p>Here you can view the NXT API endpoint. <a href="../getting-started">Click here to get started</a>.</p>
+      <h1 id="nxt-api">XEL API</h1>
+      <p>Here you can view the XEL API endpoint. <a href="../getting-started">Click here to get started</a>.</p>
       <h2 id="usage">Usage</h2>
       <p><code>GET nxt?requestType=</code> or <code>POST nxt?requestType=</code></p>
-      <p>Every call to the original NXT api can be made to the above address replacing everything after the ? with the required parameters as described in the <a href="http://wiki.nxtcrypto.org/wiki/Nxt_API">wiki</a>. Unless there is an error from our side the return object is exactly the same as described in the <a href="http://wiki.nxtcrypto.org/wiki/Nxt_API">wiki</a>.</p>
+      <p>Every call to the original XEL api can be made to the above address replacing everything after the ? with the required parameters as described in the <a href="http://wiki.nxtcrypto.org/wiki/Nxt_API">wiki</a>. Unless there is an error from our side the return object is exactly the same as described in the <a href="http://wiki.nxtcrypto.org/wiki/Nxt_API">wiki</a>.</p>
       <h3 id="example">Example</h3>
       <p><code>https://wallet.MyXEL.info/api/0.1/nxt?email=abc@def&amp;password=password&amp;requestType=getAccount&amp;account=1739068987193023818</code></p>
       <h3 id="response">Response</h3>
@@ -89,7 +89,7 @@
     &quot;requestProcessingTime&quot;: 1,
     &quot;guaranteedBalanceNQT&quot;: &quot;0&quot;,
     &quot;balanceNQT&quot;: &quot;-99999730400000000&quot;,
-    &quot;accountRS&quot;: &quot;NXT-MRCC-2YLS-8M54-3CMAJ&quot;,
+    &quot;accountRS&quot;: &quot;XEL-MRCC-2YLS-8M54-3CMAJ&quot;,
     &quot;account&quot;: &quot;1739068987193023818&quot;,
     &quot;effectiveBalanceNXT&quot;: 0,
     &quot;unconfirmedBalanceNQT&quot;: &quot;-99999730400000000&quot;,
@@ -116,7 +116,7 @@
         transaction: &quot;7662547477730511007&quot;,
         amountNQT: &quot;100000000&quot;,
         ecBlockHeight: 133128,
-        recipientRS: &quot;NXT-38WK-UWYL-MVQY-9PQHV&quot;,
+        recipientRS: &quot;XEL-38WK-UWYL-MVQY-9PQHV&quot;,
         type: 0,
         feeNQT: &quot;100000000&quot;,
         recipient: &quot;9060914620736248721&quot;,
@@ -128,7 +128,7 @@
         subtype: 0,
         senderPublicKey: &quot;7c7de7102737004cc64f9f75736cbbfd76f5f782f25be0a11c40658fc6a09e38&quot;,
         deadline: 1440,
-        senderRS: &quot;NXT-TN3E-KQRH-QE8A-4W4LF&quot;,
+        senderRS: &quot;XEL-TN3E-KQRH-QE8A-4W4LF&quot;,
         signature: &quot;e141d58ec260874d72ddbc22b0b6877aeacb02b8109cf467c0ed6702cb3ee702fa16875d72a872fc0cfe54c048e821362c5d10e7a5d3e81f1eb5b66184d6bff7&quot;
         },
     broadcasted: true,
@@ -137,9 +137,9 @@
 </code></pre>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
-  <script src="../../js/bootstrap-3.0.3.min.js"></script> 
-  <script src="../../js/prettify-1.0.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="../../js/bootstrap-3.0.3.min.js"></script>
+  <script src="../../js/prettify-1.0.min.js"></script>
   <script src="../../js/base.js"></script>
 </body>
 </html>
