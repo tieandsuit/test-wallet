@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>jQuery library - MyNXT docs</title>
+  <link href="../../css/bootstrap-3.0.3.min.css" rel="stylesheet">
+  <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+  <link href="../../css/prettify-1.0.css" rel="stylesheet">
+  <link href="../../css/base.css" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="../..">MyNXT docs</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plugins <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../getting-started">Getting started</a>
+              </li>
+              <li class="active">
+                <a href=".">jQuery library</a>
+              </li>
+              <li>
+                <a href="../angular">Angular service</a>
+              </li>
+              <li>
+                <a href="../publishing">Publishing plugins</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">API <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../api/getting-started">Getting started</a>
+              </li>
+              <li>
+                <a href="../../api/wallet">Wallet</a>
+              </li>
+              <li>
+                <a href="../../api/nxt">NXT</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a rel="next" href="../getting-started"><i class="fa fa-arrow-left"></i> Previous</a>
+          </li>
+          <li>
+            <a rel="prev" href="../angular">Next <i class="fa fa-arrow-right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-md-3">
+      <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+          <li class="main active">
+            <a href="#jquery-library">jQuery library</a>
+          </li>
+          <li>
+            <a href="#get-accounts">Get accounts</a>
+          </li>
+          <li>
+            <a href="#create-transaction">Create transaction</a>
+          </li>
+          <li>
+            <a href="#local-development">Local development</a>
+          </li>
+          <li>
+            <a href="#iframe-resizer">iFrame resizer</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <h1 id="jquery-library">jQuery library</h1>
+      <hr>
+      <p>You can find the library in our <a href="https://bitbucket.org/mynxt-team/jquery-library/">BitBucket repository</a></p>
+      <h2 id="get-accounts">Get accounts</h2>
+      <p>You can retrieve all accounts via <code>MyNXT.getAccounts(callback)</code>. The callback takes one parameter: <code>result</code>.</p>
+      <h3 id="usage">Usage</h3>
+      <pre><code>MyNXT.getAccounts(function (result) {});
+</code></pre>
+      <h3 id="response">Response</h3>
+      <pre><code>{
+   &quot;status&quot;:&quot;success&quot;,
+   &quot;data&quot;:{
+      &quot;accounts&quot;:[
+         {
+            &quot;id_account&quot;:&quot;101&quot;,
+            &quot;tx_account_id&quot;:&quot;2794585332379340844&quot;,
+            &quot;tx_public_key&quot;:&quot;7c7de7102737004cc64f9f75736cbbfd76f5f782f25be0a11c40658fc6a09e38&quot;,
+            &quot;tx_label&quot;:&quot;Main account&quot;,
+            &quot;bl_active&quot;:&quot;1&quot;,
+            &quot;bl_selected&quot;:&quot;1&quot;
+         },
+         {
+            &quot;id_account&quot;:&quot;102&quot;,
+            &quot;tx_account_id&quot;:&quot;15445387234958774870&quot;,
+            &quot;tx_public_key&quot;:&quot;38ef44852dffdbf20c501464d51ecf86d9f4d15798ee62f53352e25fbe19161e&quot;,
+            &quot;tx_label&quot;:&quot;Savings account&quot;,
+            &quot;bl_active&quot;:&quot;1&quot;,
+            &quot;bl_selected&quot;:&quot;0&quot;
+         }
+      ]
+   }
+}
+</code></pre>
+      <ul>
+        <li><code>id_account</code> internal account ID</li>
+        <li><code>tx_account_id</code> NXT account ID of this account</li>
+        <li><code>tx_public_key</code> Public key of this account</li>
+        <li><code>tx_label</code> Label of this account</li>
+        <li><code>bl_active</code> Is this account active. Will be the case 99.99% of the time</li>
+        <li><code>bl_selected</code> Is this the current selected account in the wallet.</li>
+      </ul>
+      <h3 id="nrs-requests">NRS Requests</h3>
+      <p>You can also make any NRS requests as described in the <a href="../../wiki.nxtcrypto.org/wiki/Nxt_API">wiki</a> using <code>MyNXT.nrsRequest(requestType, data, callback)</code></p>
+      <h4 id="usage_1">Usage</h4>
+      <pre><code>MyNXT.nrsRequest('getTransaction', { transaction: 123342896693901042 }, function (result) {});
+</code></pre>
+      <h4 id="response_1">Response</h4>
+      <p>The responses will be exactly the same as described in the wiki.</p>
+      <pre><code>{
+   &quot;signature&quot;:&quot;2aeabaabc18d0e38ba38e586103c0a8461afcff566eb24f741fe62220f9bc602c808ab44704764996588fd0745330f08ca88f9433fd02e19b07fd62795176701&quot;,
+   &quot;transactionIndex&quot;:0,
+   &quot;type&quot;:0,
+   &quot;ecBlockId&quot;:&quot;5556085300633820589&quot;,
+   &quot;signatureHash&quot;:&quot;595c4c142db88a7d23c707f18ced0c82d364ce0f96292e92dfc4f7b1dc93213c&quot;,
+   &quot;attachment&quot;:{
+      &quot;encryptedMessage&quot;:{
+         &quot;data&quot;:&quot;3d8376fabc5198dfab6a96aadd71ca09d1b6ec4127911f2e2d845e6e0c035876a54facc91fa8a084f0abff67f655a8923a8f1f7eb374f3dddfcae2af5f2ac077&quot;,
+         &quot;nonce&quot;:&quot;665f62470968c8d633c8309648efa36ed388a0dcd4de7924006bbeaac383a1e8&quot;,
+         &quot;isText&quot;:true
+      },
+      &quot;version.EncryptedMessage&quot;:1
+   },
+   &quot;senderRS&quot;:&quot;NXT-AMPQ-B6ZZ-S8TL-EFDBH&quot;,
+   &quot;subtype&quot;:0,
+   &quot;amountNQT&quot;:&quot;509900000000&quot;,
+   &quot;recipientRS&quot;:&quot;NXT-E8JD-FHKJ-CQ9H-5KGMQ&quot;,
+   &quot;block&quot;:&quot;17850083479769392422&quot;,
+   &quot;blockTimestamp&quot;:27626034,
+   &quot;deadline&quot;:1440,
+   &quot;timestamp&quot;:27625922,
+   &quot;height&quot;:86966,
+   &quot;senderPublicKey&quot;:&quot;dc7b03d7dd03fe316bb3321c65683c7e528dbed6bdedd67d5aeae2e3dd170126&quot;,
+   &quot;feeNQT&quot;:&quot;100000000&quot;,
+   &quot;requestProcessingTime&quot;:1,
+   &quot;confirmations&quot;:69465,
+   &quot;fullHash&quot;:&quot;f2f60107b633b60175d64c87e6d580cd2cbdf3521a7f02cbfd9e2af88f4714e5&quot;,
+   &quot;version&quot;:1,
+   &quot;sender&quot;:&quot;14386024746077933238&quot;,
+   &quot;recipient&quot;:&quot;4273301882745002507&quot;,
+   &quot;ecBlockHeight&quot;:179517,
+   &quot;transaction&quot;:&quot;123342896693901042&quot;
+}
+</code></pre>
+      <h2 id="create-transaction">Create transaction</h2>
+      <p>You can ask to create any transaction on behalf of the user. This can be any NRS call like <code>sendMoney</code>, <code>sendMessage</code>, <code>placeBidOrder</code> etc.</p>
+      <h3 id="usage_2">Usage</h3>
+      <pre><code> var data = {
+   requestType: 'sendMoney',
+   amountNQT: 100000000, // 1 NXT
+   feeNQT: 100000000, // optional, we will use 1 NXT if left omitted
+   recipient: 'NXT-E8JD-FHKJ-CQ9H-5KGMQ' // required for this requestType
+ };
+
+MyNXT.sendTransaction(data, function (result) {});
+</code></pre>
+      <h3 id="request">Request</h3>
+      <p>Besides the actual NRS parameters there are specific parameters to MyNXT. This list could change in the future.</p>
+      <ul>
+        <li>
+          <code>account</code> this is the account to use in numeric format, this must be an account in the user's MyNXT wallet. See the <a href="#get-accounts">Get accounts</a> endpoint to retrieve accounts.
+        </li>
+      </ul>
+      <h3 id="response_2">Response</h3>
+      <p>The responses will be exactly the same as described in the wiki. If the user cancelled the response will be <code>{"success": false }</code>.</p>
+      <h2 id="local-development">Local development</h2>
+      <p>When developing the plugin in a local environment it's not possible to create the transaction modal since it's on the MyNXT servers.</p>
+      <p>API calls need to made with your account. To solve this problems it's possible to create a config object before including the library. All API calls will be made with your information.</p>
+      <p>This config should never be public</p>
+      <pre><code>var MyNXT = {};
+
+// Configuration object for local development
+MyNXT.sdkConfig = {
+   email: 'email@email.com',
+   password: 'password'
+};
+</code></pre>
+      <h2 id="iframe-resizer">iFrame resizer</h2>
+      <p>To make sure your plugin is viewed correctly in our store we use a library called <a href="https://github.com/davidjbradshaw/iframe-resizer">iFrame Resizer</a>.</p>
+      <p>This library is included in our <a href="https://bitbucket.org/mynxt-team/example-plugin">example plugin</a>.</p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+  <script src="../../js/bootstrap-3.0.3.min.js"></script> 
+  <script src="../../js/prettify-1.0.min.js"></script> 
+  <script src="../../js/base.js"></script>
+</body>
+</html>
