@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Getting started - MyNXT docs</title>
+  <link href="../../css/bootstrap-3.0.3.min.css" rel="stylesheet">
+  <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+  <link href="../../css/prettify-1.0.css" rel="stylesheet">
+  <link href="../../css/base.css" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="../..">MyNXT docs</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plugins <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../plugins/getting-started">Getting started</a>
+              </li>
+              <li>
+                <a href="../../plugins/jquery">jQuery library</a>
+              </li>
+              <li>
+                <a href="../../plugins/angular">Angular service</a>
+              </li>
+              <li>
+                <a href="../../plugins/publishing">Publishing plugins</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">API <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="active">
+                <a href=".">Getting started</a>
+              </li>
+              <li>
+                <a href="../wallet">Wallet</a>
+              </li>
+              <li>
+                <a href="../nxt">NXT</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a rel="next" href="../../plugins/publishing"><i class="fa fa-arrow-left"></i> Previous</a>
+          </li>
+          <li>
+            <a rel="prev" href="../wallet">Next <i class="fa fa-arrow-right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-md-3">
+      <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+          <li class="main active">
+            <a href="#welcome-to-the-mynxt-api">Welcome to the myNXT API</a>
+          </li>
+          <li>
+            <a href="#authentication">Authentication</a>
+          </li>
+          <li>
+            <a href="#a-word-on-security">A word on security</a>
+          </li>
+          <li>
+            <a href="#making-api-calls">Making API calls</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <h1 id="welcome-to-the-mynxt-api">Welcome to the myNXT API</h1>
+      <p>The myNXT.info API allows you to interact with the myNXT.info online wallet, as well as perform standard NXT queries. We run a network of at least 10 high-performance NRS servers, spread around the world on four continents and monitored 24/7. When you make a call to the myNXT.info API, we automatically determine the best server to connect you to in order to process your request.</p>
+      <hr>
+      <h2 id="authentication">Authentication</h2>
+      <p>You will need a valid user id in order to use the myNXT API. You can create one for free at https://wallet.mynxt.info. The user authentication for the API varies depending on whether you have 2FA enabled.</p>
+      <p>If 2FA is disabled: simply call the API endpoint with the desired user email and password If 2FA is enabled: Make a call to any of the API endpoints with the user email and password as normal The API will respond with a message indicating that this wallet user has 2FA enabled Create a unique id to represent this user in your system, for example 'USER123'.You will need to send this id to the API in every call Call the Auth API endpoint (see below) with the user email + user password + unique user ID + Google Auth code The API will now record your unique user ID and mark it as authorized to make further API calls Go back to step 1, but this time also send the user ID you created. This time you will be able to make the call</p>
+      <h2 id="a-word-on-security">A word on security</h2>
+      <p>All of our NRS servers work in HTTPS mode only, as does our wallet server. This means that all of your calls must be made using HTTPS. Although this is far more secure than plain HTTP, please do not overlook other security measures simply because you are using HTTPS. Remember that you will be sending your account’s password to our server, and that our API uses server-side encryption/decryption – so we recommend setting up a new myNXT.info wallet account if you plan to use the API. Make sure that if you store your myNXT.info wallet username and password in your system and that you do so in the most secure way possible way. Do not keep this information in plain text on your system.</p>
+      <h2 id="making-api-calls">Making API calls</h2>
+      <p>To make a call to any of the endpoints below, simply append the endpoint to the base URL</p>
+      <p><code>https://wallet.mynxt.info/api/0.1/</code></p>
+      <p>So for example to get all accounts from a user you could do:</p>
+      <p><code>https://wallet.mynxt.info/api/0.1/user/account?email=abc@def.com&amp;password=xyz</code></p>
+      <p>Responses are in JSEND format.</p>
+      <p>Go to the <a href="../wallet">Wallet page</a> to view all endpoints regarding the MyNXT wallet or the to <a href="../nxt">NXT page</a> for normal NXT api calls.</p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+  <script src="../../js/bootstrap-3.0.3.min.js"></script> 
+  <script src="../../js/prettify-1.0.min.js"></script> 
+  <script src="../../js/base.js"></script>
+</body>
+</html>
