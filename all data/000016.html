@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Wallet - MyNXT docs</title>
+  <link href="../../css/bootstrap-3.0.3.min.css" rel="stylesheet">
+  <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+  <link href="../../css/prettify-1.0.css" rel="stylesheet">
+  <link href="../../css/base.css" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="../..">MyNXT docs</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plugins <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../plugins/getting-started">Getting started</a>
+              </li>
+              <li>
+                <a href="../../plugins/jquery">jQuery library</a>
+              </li>
+              <li>
+                <a href="../../plugins/angular">Angular service</a>
+              </li>
+              <li>
+                <a href="../../plugins/publishing">Publishing plugins</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">API <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../getting-started">Getting started</a>
+              </li>
+              <li class="active">
+                <a href=".">Wallet</a>
+              </li>
+              <li>
+                <a href="../nxt">NXT</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a rel="next" href="../getting-started"><i class="fa fa-arrow-left"></i> Previous</a>
+          </li>
+          <li>
+            <a rel="prev" href="../nxt">Next <i class="fa fa-arrow-right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-md-3">
+      <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+          <li class="main active">
+            <a href="#wallet-api">Wallet API</a>
+          </li>
+          <li>
+            <a href="#auth">Auth</a>
+          </li>
+          <li>
+            <a href="#send-nxt-from-wallet">Send NXT from wallet</a>
+          </li>
+          <li>
+            <a href="#get-encrypted-wallet">Get encrypted wallet</a>
+          </li>
+          <li>
+            <a href="#get-all-accounts-from-user">Get all accounts from user</a>
+          </li>
+          <li>
+            <a href="#get-tickers">Get tickers</a>
+          </li>
+          <li>
+            <a href="#nxt-api">NXT API</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <h1 id="wallet-api">Wallet API</h1>
+      <p>Here you can view all Wallet API endpoints. <a href="../getting-started">Click here to get started</a>.</p>
+      <h2 id="auth">Auth</h2>
+      <p><code>POST api/0.1/auth</code></p>
+      <h3 id="parameters">Parameters:</h3>
+      <ul>
+        <li>email required, login email</li>
+        <li>password required, login password</li>
+        <li>uuid optional, to save device</li>
+        <li>gauth_user_code, required if 2fa enabled</li>
+      </ul>
+      <p>Main purpose of this endpoint is to authorize a device to make requests if 2FA is enabled.</p>
+      <p>After authorizing an uuid it can be used in all API calls below.</p>
+      <h3 id="example">Example</h3>
+      <pre><code>var data = {
+    email: 'abc@def.com',
+    password: 'password',
+    uuid: '4cb1fe677ea9e554327b493c85864f8b9bef045202ed36933ef735f46f10fc16'
+    gauth_user_code: 123456
+}
+
+$.post('https://wallet.mynxt.info/api/0.1/auth', data, function (result) { console.log(result) });
+</code></pre>
+      <h3 id="response">Response</h3>
+      <pre><code>{
+    &quot;status&quot;: &quot;success&quot;,
+    &quot;data&quot;: null
+}
+</code></pre>
+      <h2 id="send-nxt-from-wallet">Send NXT from wallet</h2>
+      <p><code>POST/GET api/0.1/send</code></p>
+      <h3 id="parameters_1">Parameters</h3>
+      <ul>
+        <li><code>email</code> required, login email</li>
+        <li><code>password</code> required, login email</li>
+        <li><code>uuid optional</code>, uuid of a authorized device</li>
+        <li><code>masterPassword</code> required, wallet password</li>
+        <li><code>accountId</code> required, account to send from (from the wallet)</li>
+        <li><code>recipient</code> required, account to send to</li>
+        <li><code>amountNQT</code> required, amount to send in NQT</li>
+        <li><code>message</code> optional, non-encrypted message to attach to transaction (url encoded)</li>
+        <li><code>messageToEncrypt</code> optional, encrypted message to attach to transaction (url encoded)</li>
+      </ul>
+      <h3 id="example_1">Example</h3>
+      <pre><code>var data = {
+    email: 'abc@def.com',
+    password: 'password',
+    masterPassword: 'masterpassword',
+    accountId: '15343849087715339967',
+    recipient: '2794585332379340844',
+    amountNQT: 100000000
+}
+
+$.post('https://wallet.mynxt.info/api/0.1/send', data, function (result) { console.log(result) });
+</code></pre>
+      <h3 id="response_1">Response</h3>
+      <p>Please note: it always return status: "success" if the NXT api was successfully called. Even if the NRS server returns an error like unsufficient funds.</p>
+      <pre><code>status: &quot;succes&quot;,
+data: {
+        fullHash: &quot;3da5f8ce241593cd6a3dcf789e5005d996dc1e6883d0aa8b540b420482f8048d&quot;,
+        signatureHash: &quot;f77c6aa23e1fbc0ac8ea1fb330066a6c2110d0676a254ece792e8797a3afdff4&quot;,
+        transactionBytes: &quot;0000ac723301a0056bfb27389deb2b8c8cc7...&quot;,
+        transaction: &quot;14813206847187100989&quot;,
+        broadcasted: true
+}
+</code></pre>
+      <p>It's also possible to use any parameters from the sendMoney api. Additionally you can also attach messages as described here.</p>
+      <h3 id="example_2">Example</h3>
+      <pre><code>var data = {
+    email: 'abc@def.com',
+    password: 'password',
+    masterPassword: 'masterpassword',
+    accountId: '15343849087715339967',
+    recipient: 'NXT-66LQ-VFM3-8XRW-FBAQE',
+    amountNQT: 100000000,
+    message: 'mynxt testing'
+}
+
+$.post('https://wallet.mynxt.info/api/0.1/send', data, function (result) { console.log(result) });
+</code></pre>
+      <h3 id="response_2">Response</h3>
+      <pre><code>{
+    status: &quot;success&quot;,
+    data: {
+        fullHash: &quot;3ba969566ece1d1451e04a005b112a22c9bc0c08f1ee22cd2a3536a307c8169e&quot;,
+        requestProcessingTime: 366,
+        signatureHash: &quot;4870b299de4a49f5d7fbfbdaa9a34bf571a8ce70248fbd39d0102fe28ff0dd49&quot;,
+        transactionBytes: &quot;0010565fd401a0057c7de7102737004cc64f9f75736cbbfd76f5f782f25be0a11c40658fc6a09e3856121266db0959d600e1f5050000000000e1f50500000000000000000000000000000000000000000000000000000000000000000000000045e5ee1b59942e4a634f82d2de11196d11a69b3fbfdee645a46088533555520c446cef585c35aec9e4be8af10fe9ae86a544253ec087b1de5415c269d00ade7c01000000ffe001006628f624bf5d7956010d0000806d796e78742074657374696e67&quot;,
+        transaction: &quot;1449541628374657339&quot;,
+        transactionJSON: {
+            fullHash: &quot;3ba969566ece1d1451e04a005b112a22c9bc0c08f1ee22cd2a3536a307c8169e&quot;,
+            signatureHash: &quot;4870b299de4a49f5d7fbfbdaa9a34bf571a8ce70248fbd39d0102fe28ff0dd49&quot;,
+            transaction: &quot;1449541628374657339&quot;,
+            amountNQT: &quot;100000000&quot;,
+            ecBlockHeight: 123135,
+            attachment: {
+                message: &quot;mynxt&quot;,
+                version.Message: 1,
+                messageIsText: true
+            },
+            recipientRS: &quot;NXT-66LQ-VFM3-8XRW-FBAQE&quot;,
+            type: 0,
+            feeNQT: &quot;100000000&quot;,
+            recipient: &quot;15445387234958774870&quot;,
+            version: 1,
+            sender: &quot;2794585332379340844&quot;,
+            timestamp: 30695254,
+            ecBlockId: &quot;6231114634984040550&quot;,
+            height: 2147483647,
+            subtype: 0,
+            senderPublicKey: &quot;7c7de7102737004cc64f9f75736cbbfd76f5f782f25be0a11c40658fc6a09e38&quot;,
+            deadline: 1440,
+            senderRS: &quot;NXT-TN3E-KQRH-QE8A-4W4LF&quot;,
+            signature: &quot;45e5ee1b59942e4a634f82d2de11196d11a69b3fbfdee645a46088533555520c446cef585c35aec9e4be8af10fe9ae86a544253ec087b1de5415c269d00ade7c&quot;
+        },
+        broadcasted: true,
+        unsignedTransactionBytes: &quot;0010565fd401a0057c7de7102737004cc64f9f75736cbbfd76f5f782f25be0a11c40658fc6a09e3856121266db0959d600e1f5050000000000e1f5050000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000ffe001006628f624bf5d7956010d0000806d796e78742074657374696e67&quot;
+    }
+}
+</code></pre>
+      <h2 id="get-encrypted-wallet">Get encrypted wallet</h2>
+      <p><code>GET api/0.1/user/wallet</code></p>
+      <h3 id="parameters_2">Parameters:</h3>
+      <ul>
+        <li><code>email</code> required, login email</li>
+        <li><code>password</code> required, login email</li>
+        <li><code>uuid</code> optional, uuid of a authorized device</li>
+      </ul>
+      <h3 id="example_3">Example</h3>
+      <p><code>https://wallet.mynxt.info/api/0.1/user/wallet?email=abc@def&amp;password=password</code></p>
+      <h3 id="response_3">Response</h3>
+      <pre><code>{
+    &quot;status&quot;: &quot;success&quot;,
+    &quot;data&quot;: {
+        &quot;wallet&quot;: &quot;...&quot;,
+        &quot;salt&quot;: &quot;...&quot;,
+        &quot;version&quot;: &quot;2&quot;,
+        &quot;accounts&quot;: [{
+            &quot;id_account&quot;: &quot;132&quot;,
+            &quot;tx_account_id&quot;: &quot;11242899405565095088&quot;,
+            &quot;tx_label&quot;: &quot;Main account&quot;,
+            &quot;bl_active&quot;: &quot;1&quot;,
+            &quot;bl_selected&quot;: &quot;1&quot;
+        }, {
+            &quot;id_account&quot;: &quot;131&quot;,
+            &quot;tx_account_id&quot;: &quot;12503010641868735489&quot;,
+            &quot;tx_label&quot;: &quot;Secondary account&quot;,
+            &quot;bl_active&quot;: &quot;1&quot;,
+            &quot;bl_selected&quot;: &quot;0&quot;
+        }]
+    }
+}
+</code></pre>
+      <h2 id="get-all-accounts-from-user">Get all accounts from user</h2>
+      <p><code>GET api/0.1/user/account</code></p>
+      <h3 id="parameters_3">Parameters:</h3>
+      <ul>
+        <li><code>email</code> required, login email</li>
+        <li><code>password</code> required, login email</li>
+        <li><code>uuid</code> optional, uuid of a authorized device</li>
+      </ul>
+      <h3 id="example_4">Example</h3>
+      <p><code>https://wallet.mynxt.info/api/0.1/user/acccount?email=abc@def&amp;password=password</code></p>
+      <h3 id="response_4">Response</h3>
+      <pre><code>{
+    &quot;status&quot;: &quot;success&quot;,
+    &quot;data&quot;: {
+        &quot;accounts&quot;: [{
+            &quot;id_account&quot;: &quot;132&quot;,
+            &quot;tx_account_id&quot;: &quot;11242899405565095088&quot;,
+            &quot;tx_label&quot;: &quot;Main account&quot;,
+            &quot;bl_active&quot;: &quot;1&quot;,
+            &quot;bl_selected&quot;: &quot;1&quot;
+        }, {
+            &quot;id_account&quot;: &quot;131&quot;,
+            &quot;tx_account_id&quot;: &quot;12503010641868735489&quot;,
+            &quot;tx_label&quot;: &quot;Secondary account&quot;,
+            &quot;bl_active&quot;: &quot;1&quot;,
+            &quot;bl_selected&quot;: &quot;0&quot;
+        }]
+    }
+}
+</code></pre>
+      <h2 id="get-tickers">Get tickers</h2>
+      <p><code>GET api/0.1/rates</code></p>
+      <h3 id="parameters_4">Parameters:</h3>
+      <ul>
+        <li><code>email</code> required, login email</li>
+        <li><code>password</code> required, login email</li>
+        <li><code>uuid</code> optional, uuid of a authorized device</li>
+      </ul>
+      <h3 id="example_5">Example</h3>
+      <p>https://wallet.mynxt.info/api/0.1/rates?email=abc@def&amp;password=password</p>
+      <h3 id="response_5">Response</h3>
+      <pre><code>{
+    &quot;status&quot;: &quot;success&quot;,
+    &quot;data&quot;: [{
+        &quot;ticker&quot;: &quot;BTC_USD&quot;,
+        &quot;value&quot;: &quot;610.94&quot;,
+        &quot;updated&quot;: &quot;2014-07-16 19:40:10&quot;,
+    }, {
+        &quot;ticker&quot;: &quot;BTC_NXT&quot;,
+        &quot;value&quot;: &quot;0.0000714&quot;,
+        &quot;updated&quot;: &quot;2014-07-16 19:40:10&quot;,
+    }]
+}
+</code></pre>
+      <h2 id="nxt-api">NXT API</h2>
+      <p><code>GET nxt?requestType=</code></p>
+      <p>Every call to the original NXT api can be made to the above address replacing everything after the ? with the required parameters as described in the wiki. Unless there is an error from our side the return object is exactly the same as described in the wiki</p>
+      <h3 id="example_6">Example</h3>
+      <p><code>https://wallet.mynxt.info/api/0.1/nxt?email=abc@def&amp;password=password&amp;requestType=getAccount&amp;account=1739068987193023818</code></p>
+      <h3 id="response_6">Response</h3>
+      <pre><code>{
+    &quot;publicKey&quot;: &quot;1259ec21d31a30898d7cd1609f80d9668b4778e3d97e941044b39f0c44d2e51b&quot;,
+    &quot;requestProcessingTime&quot;: 1,
+    &quot;guaranteedBalanceNQT&quot;: &quot;0&quot;,
+    &quot;balanceNQT&quot;: &quot;-99999730400000000&quot;,
+    &quot;accountRS&quot;: &quot;NXT-MRCC-2YLS-8M54-3CMAJ&quot;,
+    &quot;account&quot;: &quot;1739068987193023818&quot;,
+    &quot;effectiveBalanceNXT&quot;: 0,
+    &quot;unconfirmedBalanceNQT&quot;: &quot;-99999730400000000&quot;,
+    &quot;forgedBalanceNQT&quot;: &quot;0&quot;
+}
+</code></pre>
+      <p>It's also possible to give a masterPassword and accountId parameter. It will result in the decryption of the wallet and supplying a passPhrase parameter of the corresponding account to the NRS API.</p>
+      <h3 id="example_7">Example</h3>
+      <pre><code>https://wallet.mynxt.info/api/0.1/nxt?email=abc@def&amp;password=password&amp;masterPassword=myMasterPassword&amp;accountId=2794585332379340844&amp;requestType=sendMoney&amp;amountNQT=100000000&amp;feeNQT=100000000&amp;deadline=1440&amp;recipient=NXT-38WK-UWYL-MVQY-9PQHV
+</code></pre>
+      <p>The above example is the same as manually suppling a passPhrase parameter.</p>
+      <pre><code>https://wallet.mynxt.info/api/0.1/nxt?email=abc@def&amp;password=password&amp;requestType=sendMoney&amp;passPhrase=mySecretPassPhrase&amp;amount=100000000&amp;feeNQT=100000000&amp;deadline=1440&amp;recipient=NXT-38WK-UWYL-MVQY-9PQHV
+</code></pre>
+      <h3 id="response_7">Response</h3>
+      <pre><code>{
+    fullHash: &quot;9f48b14455d6566a0ac7f0ac031eb936e31604adac00583b636d04db0190e8a7&quot;,
+    requestProcessingTime: 387,
+    signatureHash: &quot;e5b8b8dd7f8eb06fcde36f3706cbacd0a0dc624d27251b052c511f20b8d813d5&quot;,
+    transactionBytes: &quot;00104f96e101a0057c7de7102737004cc64f9f75736cbbfd76f5f782f25be0a11c40658fc6a09e38919b203dd7d5be7d00e1f5050000000000e1f505000000000000000000000000000000000000000000000000000000000000000000000000e141d58ec260874d72ddbc22b0b6877aeacb02b8109cf467c0ed6702cb3ee702fa16875d72a872fc0cfe54c048e821362c5d10e7a5d3e81f1eb5b66184d6bff70000000008080200c078518b420c0864&quot;,
+    transaction: &quot;7662547477730511007&quot;,
+    transactionJSON: {
+        fullHash: &quot;9f48b14455d6566a0ac7f0ac031eb936e31604adac00583b636d04db0190e8a7&quot;,
+        signatureHash: &quot;e5b8b8dd7f8eb06fcde36f3706cbacd0a0dc624d27251b052c511f20b8d813d5&quot;,
+        transaction: &quot;7662547477730511007&quot;,
+        amountNQT: &quot;100000000&quot;,
+        ecBlockHeight: 133128,
+        recipientRS: &quot;NXT-38WK-UWYL-MVQY-9PQHV&quot;,
+        type: 0,
+        feeNQT: &quot;100000000&quot;,
+        recipient: &quot;9060914620736248721&quot;,
+        version: 1,
+        sender: &quot;2794585332379340844&quot;,
+        timestamp: 31561295,
+        ecBlockId: &quot;7208024683551226048&quot;,
+        height: 2147483647,
+        subtype: 0,
+        senderPublicKey: &quot;7c7de7102737004cc64f9f75736cbbfd76f5f782f25be0a11c40658fc6a09e38&quot;,
+        deadline: 1440,
+        senderRS: &quot;NXT-TN3E-KQRH-QE8A-4W4LF&quot;,
+        signature: &quot;e141d58ec260874d72ddbc22b0b6877aeacb02b8109cf467c0ed6702cb3ee702fa16875d72a872fc0cfe54c048e821362c5d10e7a5d3e81f1eb5b66184d6bff7&quot;
+        },
+    broadcasted: true,
+    unsignedTransactionBytes: &quot;00104f96e101a0057c7de7102737004cc64f9f75736cbbfd76f5f782f25be0a11c40658fc6a09e38919b203dd7d5be7d00e1f5050000000000e1f505000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008080200c078518b420c0864&quot;
+}
+</code></pre>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+  <script src="../../js/bootstrap-3.0.3.min.js"></script> 
+  <script src="../../js/prettify-1.0.min.js"></script> 
+  <script src="../../js/base.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Publishing plugins - MyNXT docs</title>
+  <link href="../../css/bootstrap-3.0.3.min.css" rel="stylesheet">
+  <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+  <link href="../../css/prettify-1.0.css" rel="stylesheet">
+  <link href="../../css/base.css" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="../..">MyNXT docs</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plugins <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../getting-started">Getting started</a>
+              </li>
+              <li>
+                <a href="../jquery">jQuery library</a>
+              </li>
+              <li>
+                <a href="../angular">Angular service</a>
+              </li>
+              <li class="active">
+                <a href=".">Publishing plugins</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">API <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../../api/getting-started">Getting started</a>
+              </li>
+              <li>
+                <a href="../../api/wallet">Wallet</a>
+              </li>
+              <li>
+                <a href="../../api/nxt">NXT</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a rel="next" href="../angular"><i class="fa fa-arrow-left"></i> Previous</a>
+          </li>
+          <li>
+            <a rel="prev" href="../../api/getting-started">Next <i class="fa fa-arrow-right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-md-3">
+      <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+          <li class="main active">
+            <a href="#publishing-plugins">Publishing plugins</a>
+          </li>
+          <li>
+            <a href="#rules">Rules</a>
+          </li>
+          <li>
+            <a href="#publishing-process">Publishing process</a>
+          </li>
+          <li>
+            <a href="#required-information">Required information</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <h1 id="publishing-plugins">Publishing plugins</h1>
+      <hr>
+      <p>Plugins are client-side (HTML + JS) applications that can interact with the MyNXT Wallet in a secure way. The plugin runs inside an IFRAME to isolate it from the rest of the wallet, but it can initiate NXT transactions with the user's MyNXT accounts by calling a special API endpoint that prompts the user for their master password, makes the NXT API call in behalf of the plugin and then return the results to the plugin.</p>
+      <p>This process offers the best security, since the plugin itself never gets access to the user's NXT account passphrase or their MyNXT master password. All plugins will be reviewed by MyNXT before being published.</p>
+      <h3 id="rules">Rules</h3>
+      <ul>
+        <li>It is permitted for your plugin to make AJAX calls to an external website/services</li>
+        <li>All plugins need to be open source (they would be anyway since they use HTML+JS)</li>
+        <li>It is not allowed to ask the user for their MyNXT account pass phrase or master password under any circumstance</li>
+        <li>If your plugin is paid, MyNXT follows the same model as app stores, we charge a 30% fee and the plugin author keeps 70%</li>
+        <li>We reserve the right to un-publish your plugin in case we find that it is breaking any of the MyNXT rules (this is to ensure the security of MyNXT and its users).</li>
+      </ul>
+      <p>If you are in doubt about whether your idea would be a good fit for MyNXT, please contact us first and we will be happy to discuss it with you.</p>
+      <h2 id="publishing-process">Publishing process</h2>
+      <ol>
+        <li>Read all the docs first, ask any question you still have by contact us or in the <a href="https://nxtforum.org/mynxt-info/">forums</a>.
+        </li>
+        <li>Create a repository for your plugin in <a href="https://github.com/">GitHub</a> or <a href="https://bitbucket.org">BitBucket</a> (it's free) and submit the URL in the developers section of the MyNXT plugins area.
+        </li>
+        <li>Make sure your plugin has the <a href="#required-information">required information listed below</a>.
+        </li>
+        <li>Make sure you include a whitelist.txt file listing all external websites that are allowed to receive AJAX calls from your plugin (one domain per line, wildcards allowed).</li>
+        <li>MyNXT will review the plugin (lead time is 1 week), and make a private copy of your repository which is the one we will offer to users.</li>
+        <li>If you need to update your plugin, you should update the files in the register repository and submit a new version of the plugin. We will review it again before publishing.</li>
+      </ol>
+      <h2 id="required-information">Required information</h2>
+      <p>Before we can publish the plugin we will need the following information about the plugin:</p>
+      <ul>
+        <li><code>author_name</code> under which name should the plugin be published</li>
+        <li><code>author_website</code> <em>optional</em> website of the author</li>
+        <li><code>author_email</code> <em>optional</em> email of the author</li>
+        <li><code>title</code> the name of the plugin as it will appear in the store</li>
+        <li><code>menu_name</code> the name of the plugin as it will appear in wallet menu</li>
+        <li><code>short_description</code> short, 60 characters max, description</li>
+        <li><code>description</code> main description as it will appear in the details modal, can include HTML</li>
+        <li><code>logo_path</code> path of the logo in the repository, for example <code>app/img/logo.png</code></li>
+        <li><code>price_nxt</code> price in NXT of the plugin, this can either be 0 or a minimal of 5 NXT.</li>
+        <li><code>version</code> current version of the plugin</li>
+      </ul>
+      <p>You can submit this information in a txt file, json file, xml file. As long as it nicely formatted and clear.</p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+  <script src="../../js/bootstrap-3.0.3.min.js"></script> 
+  <script src="../../js/prettify-1.0.min.js"></script> 
+  <script src="../../js/base.js"></script>
+</body>
+</html>

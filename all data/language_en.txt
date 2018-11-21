@@ -1,0 +1,13 @@
+generateToken This action will generate a token to be used by the plugin. This action costs no NXT.
+placeBidOrder Place asset bid order
+placeAskOrder Place asset ask order
+cancelBidOrder This will cancel the requested bid order
+cancelAskOrder This will cancel the requested ask order
+transferAsset Transfer asset to recipient
+currencyBuy Buy currency units
+currencySell Sell currency units
+transferCurrency Transfer currency units
+currencyReserveIncrease Reserve currency units
+currencyReserveClaim Claim the NXT behind the currency back
+getPassphrase This action will send your passprase to the NRS running locally in your browser. Your password will not be send to our servers!
+mgwSend This will action will send coins to your specified recipient address
